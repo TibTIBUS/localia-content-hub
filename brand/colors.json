@@ -1,0 +1,40 @@
+{
+  "version": "1.0",
+  "source": "Visuels de reference Localia fournis dans la conversation",
+  "palette": {
+    "background_dark_green": {
+      "role": "Fond principal",
+      "hex_approx": "#06251F"
+    },
+    "localia_green": {
+      "role": "Couleur de marque principale",
+      "hex_approx": "#0F4A3C"
+    },
+    "soft_green": {
+      "role": "Surfaces secondaires, cards, details",
+      "hex_approx": "#D8F2E8"
+    },
+    "cta_orange": {
+      "role": "Mots cles, boutons, accroches, pictos importants",
+      "hex_approx": "#F47B20"
+    },
+    "warm_amber": {
+      "role": "Lueurs, accents, relief premium",
+      "hex_approx": "#FFB04A"
+    },
+    "white": {
+      "role": "Texte principal et contraste",
+      "hex_approx": "#FFFFFF"
+    },
+    "muted_text": {
+      "role": "Sous-titres et textes secondaires",
+      "hex_approx": "#BFD8D0"
+    }
+  },
+  "rules": [
+    "Toujours partir d un fond vert sombre ou d une base blanche avec accents verts et oranges.",
+    "L orange doit servir a mettre en avant les mots essentiels, pas a dominer tout le visuel.",
+    "Eviter toute couleur dominante hors vert, blanc, orange ou ambre.",
+    "Le contraste doit rester fort pour lecture mobile."
+  ]
+}
