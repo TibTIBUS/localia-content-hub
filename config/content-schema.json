@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Localia Social Content",
+  "type": "object",
+  "required": ["id", "status", "company", "platforms", "scheduled_for", "topic", "facebook", "instagram", "visual"],
+  "properties": {
+    "id": { "type": "string" },
+    "status": { "enum": ["draft", "ready", "published", "failed"] },
+    "company": { "type": "string" },
+    "platforms": {
+      "type": "array",
+      "items": { "enum": ["facebook", "instagram"] }
+    },
+    "scheduled_for": { "type": "string", "format": "date-time" },
+    "topic": { "type": "string" },
+    "objective": { "type": "string" },
+    "facebook": {
+      "type": "object",
+      "required": ["text"],
+      "properties": {
+        "text": { "type": "string" },
+        "cta": { "type": "string" }
+      }
+    },
+    "instagram": {
+      "type": "object",
+      "required": ["caption", "hashtags"],
+      "properties": {
+        "caption": { "type": "string" },
+        "hashtags": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "visual": {
+      "type": "object",
+      "required": ["file", "brief", "alt"],
+      "properties": {
+        "file": { "type": "string" },
+        "brief": { "type": "string" },
+        "alt": { "type": "string" },
+        "format": { "type": "string" }
+      }
+    },
+    "publication": {
+      "type": "object",
+      "properties": {
+        "published_at": { "type": "string" },
+        "facebook_post_url": { "type": "string" },
+        "instagram_post_url": { "type": "string" }
+      }
+    },
+    "error_message": { "type": "string" }
+  }
+}
