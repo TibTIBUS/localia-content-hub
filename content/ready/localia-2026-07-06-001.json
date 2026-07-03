@@ -1,6 +1,6 @@
 {
   "id": "localia-2026-07-06-001",
-  "status": "ready",
+  "status": "draft",
   "company": "Localia",
   "platforms": ["facebook", "instagram"],
   "scheduled_for": "2026-07-06T10:00:00+02:00",
@@ -32,7 +32,9 @@
   },
   "visual": {
     "file": "/assets/images/localia-2026-07-06-001.png",
+    "fallback_base64_file": "/assets/images/localia-2026-07-06-001.png.b64",
     "brief": "/assets/visual-briefs/localia-2026-07-06-001.md",
+    "prompt": "/assets/image-prompts/localia-2026-07-06-001.md",
     "alt": "Checklist Localia des cinq points essentiels pour verifier la visibilite locale d une entreprise.",
     "format": "1080x1080 PNG",
     "headline": "Votre entreprise est-elle visible ?",
@@ -41,7 +43,7 @@
     "layout_notes": "Fond vert sombre premium, gros titre, mot visible en orange, 5 cards arrondies, smartphone ou carte locale, CTA orange bas."
   },
   "quality": {
-    "checklist_passed": true,
-    "notes": "Contenu conforme au Brand Engine V1, utilise le template checklist, benefice client clair, CTA present et brief visuel disponible."
+    "checklist_passed": false,
+    "notes": "Contenu texte et brief conformes. Statut remis en draft jusqu a ajout du visuel final PNG ou du fallback PNG base64."
   }
 }
