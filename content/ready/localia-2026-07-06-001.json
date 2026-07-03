@@ -1,0 +1,47 @@
+{
+  "id": "localia-2026-07-06-001",
+  "status": "ready",
+  "company": "Localia",
+  "platforms": ["facebook", "instagram"],
+  "scheduled_for": "2026-07-06T10:00:00+02:00",
+  "topic": "Checklist de visibilite locale",
+  "post_type": "P05-checklist",
+  "layout": "L04_checklist_blocks",
+  "template": "T02-checklist",
+  "objective": "Inciter les entreprises locales a verifier si elles sont faciles a trouver et a contacter en ligne.",
+  "knowledge_sources": [
+    "/knowledge/services.md",
+    "/knowledge/positioning.md",
+    "/knowledge/seo-local.md",
+    "/knowledge/social-media.md"
+  ],
+  "brand_sources": [
+    "/brand/brand-engine.md",
+    "/brand/colors.json",
+    "/brand/layouts.json",
+    "/brand/visual-rules.md",
+    "/brand/quality-checklist.md"
+  ],
+  "facebook": {
+    "text": "Votre entreprise est-elle vraiment facile a trouver en ligne ?\n\nAvant de parler de publicite ou de gros budget, il y a deja quelques points simples a verifier :\n\n1. Votre entreprise ressort-elle clairement sur Google ?\n2. Votre site donne-t-il confiance ?\n3. Vos informations de contact sont-elles faciles a trouver ?\n4. Votre page Facebook ou Instagram montre-t-elle que vous etes actif ?\n5. Vos clients comprennent-ils rapidement ce que vous proposez ?\n\nCes details peuvent faire la difference entre un client qui vous contacte et un client qui passe au concurrent suivant.\n\nChez Localia, nous aidons les entreprises locales a rendre leur presence en ligne plus claire, plus professionnelle et plus efficace.",
+    "cta": "Demander un diagnostic Localia."
+  },
+  "instagram": {
+    "caption": "Votre entreprise est-elle vraiment visible en ligne ?\n\n5 points simples a verifier :\n- Google clair\n- Site a jour\n- Contact facile\n- Page active\n- Message lisible\n\nCes details peuvent changer la facon dont un client vous percoit.\n\nLocalia aide les entreprises locales a gagner en visibilite et en confiance.",
+    "hashtags": ["#Localia", "#VisibiliteLocale", "#SEOLocal", "#Commercants", "#Artisans", "#PME", "#GoogleBusiness", "#CommunicationDigitale"]
+  },
+  "visual": {
+    "file": "/assets/images/localia-2026-07-06-001.png",
+    "brief": "/assets/visual-briefs/localia-2026-07-06-001.md",
+    "alt": "Checklist Localia des cinq points essentiels pour verifier la visibilite locale d une entreprise.",
+    "format": "1080x1080 PNG",
+    "headline": "Votre entreprise est-elle visible ?",
+    "highlight": "visible",
+    "cta": "Diagnostic Localia",
+    "layout_notes": "Fond vert sombre premium, gros titre, mot visible en orange, 5 cards arrondies, smartphone ou carte locale, CTA orange bas."
+  },
+  "quality": {
+    "checklist_passed": true,
+    "notes": "Contenu conforme au Brand Engine V1, utilise le template checklist, benefice client clair, CTA present et brief visuel disponible."
+  }
+}
