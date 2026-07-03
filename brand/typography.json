@@ -1,0 +1,33 @@
+{
+  "version": "1.0",
+  "typography_system": {
+    "title": {
+      "style": "Tres gros, tres gras, sans serif, fort impact",
+      "usage": "Accroche principale",
+      "case": "Majuscules ou casse titre selon lisibilite"
+    },
+    "highlight": {
+      "style": "Meme graisse que le titre, couleur orange",
+      "usage": "Mot-cle central du message"
+    },
+    "subtitle": {
+      "style": "Sans serif, medium ou semi-bold, blanc ou vert clair",
+      "usage": "Explication courte sous le titre"
+    },
+    "card_text": {
+      "style": "Sans serif, lisible, compact",
+      "usage": "Benefices ou mini-explications dans les blocs"
+    },
+    "footer": {
+      "style": "Petit mais lisible",
+      "usage": "Services, site, promesse ou rappel de marque"
+    }
+  },
+  "rules": [
+    "Le titre doit etre lisible en moins de deux secondes.",
+    "Un seul message principal par visuel.",
+    "Utiliser l orange pour 1 a 3 mots maximum dans le titre.",
+    "Eviter les paragraphes longs dans les visuels.",
+    "Preferer des phrases courtes et commerciales."
+  ]
+}
