@@ -1,0 +1,34 @@
+{
+  "version": "1.0",
+  "components": {
+    "logo_zone": {
+      "position": "top_left",
+      "rule": "Toujours visible, jamais dominant"
+    },
+    "headline_block": {
+      "rule": "Titre court, massif, avec 1 a 3 mots orange"
+    },
+    "cta_button": {
+      "style": "Bouton orange arrondi, texte court, fort contraste",
+      "examples": ["localiapro.fr", "Diagnostic offert", "Audit gratuit", "Demander une maquette"]
+    },
+    "benefit_card": {
+      "style": "Bloc arrondi, fond clair ou vert sombre, icone simple, texte court",
+      "usage": "Lister benefices, services ou etapes"
+    },
+    "hero_device": {
+      "style": "Smartphone ou ordinateur premium avec interface simplifiee",
+      "usage": "Representer Google, site web, IA, reseaux sociaux"
+    },
+    "footer_services": {
+      "style": "Bandeau bas lisible avec services ou promesse",
+      "usage": "Rappeler l offre Localia"
+    }
+  },
+  "rules": [
+    "Les composants doivent etre reutilises d un visuel a l autre.",
+    "Les coins arrondis sont une signature visuelle importante.",
+    "Les effets de lumiere doivent rester premium et sobres.",
+    "Les icones doivent etre simples, modernes et coherentes."
+  ]
+}
