@@ -1,8 +1,23 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Localia Social Content",
+  "title": "Localia Social Content V2",
   "type": "object",
-  "required": ["id", "status", "company", "platforms", "scheduled_for", "topic", "facebook", "instagram", "visual"],
+  "required": [
+    "id",
+    "status",
+    "company",
+    "platforms",
+    "scheduled_for",
+    "topic",
+    "post_type",
+    "layout",
+    "template",
+    "objective",
+    "facebook",
+    "instagram",
+    "visual",
+    "quality"
+  ],
   "properties": {
     "id": { "type": "string" },
     "status": { "enum": ["draft", "ready", "published", "failed"] },
@@ -13,10 +28,21 @@
     },
     "scheduled_for": { "type": "string", "format": "date-time" },
     "topic": { "type": "string" },
+    "post_type": { "type": "string" },
+    "layout": { "type": "string" },
+    "template": { "type": "string" },
     "objective": { "type": "string" },
+    "knowledge_sources": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "brand_sources": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
     "facebook": {
       "type": "object",
-      "required": ["text"],
+      "required": ["text", "cta"],
       "properties": {
         "text": { "type": "string" },
         "cta": { "type": "string" }
@@ -35,12 +61,24 @@
     },
     "visual": {
       "type": "object",
-      "required": ["file", "brief", "alt"],
+      "required": ["file", "brief", "alt", "format", "headline", "highlight", "cta"],
       "properties": {
         "file": { "type": "string" },
         "brief": { "type": "string" },
         "alt": { "type": "string" },
-        "format": { "type": "string" }
+        "format": { "type": "string" },
+        "headline": { "type": "string" },
+        "highlight": { "type": "string" },
+        "cta": { "type": "string" },
+        "layout_notes": { "type": "string" }
+      }
+    },
+    "quality": {
+      "type": "object",
+      "required": ["checklist_passed", "notes"],
+      "properties": {
+        "checklist_passed": { "type": "boolean" },
+        "notes": { "type": "string" }
       }
     },
     "publication": {
