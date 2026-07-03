@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Localia - Checklist visibilite locale</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #06251f; font-family: Arial, Helvetica, sans-serif; }
+    .canvas {
+      width: 1080px;
+      height: 1080px;
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 80% 15%, rgba(244,123,32,.26), transparent 26%),
+        radial-gradient(circle at 15% 90%, rgba(255,255,255,.09), transparent 30%),
+        linear-gradient(135deg, #06251f 0%, #0f4a3c 58%, #071c18 100%);
+      color: white;
+    }
+    .grid {
+      position: absolute;
+      inset: 0;
+      background-image: linear-gradient(rgba(255,255,255,.06) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.06) 1px, transparent 1px);
+      background-size: 72px 72px;
+      opacity: .45;
+    }
+    .logo {
+      position: absolute;
+      top: 64px;
+      left: 74px;
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      font-size: 38px;
+      font-weight: 900;
+      letter-spacing: -.5px;
+    }
+    .logo-mark {
+      width: 54px;
+      height: 54px;
+      border-radius: 15px;
+      background: linear-gradient(135deg, #f47b20, #ffb04a);
+      display: grid;
+      place-items: center;
+      color: #06251f;
+      font-weight: 900;
+    }
+    .title {
+      position: absolute;
+      left: 74px;
+      top: 168px;
+      width: 560px;
+      font-size: 78px;
+      line-height: .97;
+      font-weight: 950;
+      letter-spacing: -3px;
+    }
+    .orange { color: #f47b20; }
+    .subtitle {
+      position: absolute;
+      left: 78px;
+      top: 420px;
+      font-size: 31px;
+      color: #d8f2e8;
+      font-weight: 700;
+    }
+    .phone {
+      position: absolute;
+      right: 86px;
+      top: 188px;
+      width: 310px;
+      height: 570px;
+      border-radius: 44px;
+      background: #f8fbf9;
+      box-shadow: 0 28px 70px rgba(0,0,0,.36);
+      border: 6px solid rgba(255,255,255,.35);
+      padding: 34px 28px;
+    }
+    .search {
+      height: 64px;
+      border-radius: 32px;
+      background: #e9f1ed;
+      margin-bottom: 40px;
+      position: relative;
+    }
+    .search:before {
+      content: '';
+      position: absolute;
+      left: 24px;
+      top: 19px;
+      width: 22px;
+      height: 22px;
+      border: 5px solid #0f4a3c;
+      border-radius: 50%;
+    }
+    .search:after {
+      content: '';
+      position: absolute;
+      left: 45px;
+      top: 42px;
+      width: 24px;
+      height: 6px;
+      background: #0f4a3c;
+      transform: rotate(45deg);
+      border-radius: 4px;
+    }
+    .result {
+      background: white;
+      border-radius: 22px;
+      border: 1px solid #dce8e2;
+      padding: 22px;
+      margin-bottom: 22px;
+    }
+    .line-a { width: 74%; height: 16px; border-radius: 9px; background: #0f4a3c; margin-bottom: 18px; }
+    .line-b { width: 92%; height: 11px; border-radius: 8px; background: #a9bdb4; margin-bottom: 16px; }
+    .stars { color: #f47b20; font-size: 25px; letter-spacing: 3px; }
+    .cards {
+      position: absolute;
+      left: 74px;
+      top: 506px;
+      width: 560px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+    .card {
+      min-height: 104px;
+      border-radius: 24px;
+      background: rgba(255,255,255,.12);
+      border: 1px solid rgba(255,255,255,.17);
+      box-shadow: 0 18px 40px rgba(0,0,0,.18);
+      padding: 20px 22px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .card.wide { grid-column: span 2; }
+    .icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 15px;
+      background: linear-gradient(135deg, #f47b20, #ffb04a);
+      color: #06251f;
+      display: grid;
+      place-items: center;
+      font-size: 26px;
+      font-weight: 900;
+      flex: none;
+    }
+    .card-title { font-size: 27px; font-weight: 900; }
+    .footer {
+      position: absolute;
+      left: 74px;
+      right: 74px;
+      bottom: 62px;
+      height: 96px;
+      border-radius: 28px;
+      background: rgba(6,27,23,.72);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 34px;
+      box-shadow: 0 20px 60px rgba(0,0,0,.25);
+    }
+    .footer-left { font-size: 27px; font-weight: 800; color: #d8f2e8; }
+    .cta {
+      background: linear-gradient(135deg, #f47b20, #ffb04a);
+      color: #06251f;
+      padding: 20px 32px;
+      border-radius: 999px;
+      font-size: 30px;
+      font-weight: 950;
+    }
+    .email {
+      position: absolute;
+      right: 88px;
+      bottom: 180px;
+      color: #d8f2e8;
+      font-size: 22px;
+      font-weight: 700;
+      opacity: .92;
+    }
+  </style>
+</head>
+<body>
+  <main class="canvas">
+    <div class="grid"></div>
+    <div class="logo"><div class="logo-mark">L</div><div>Localia</div></div>
+    <section class="title">Votre entreprise est-elle <span class="orange">visible</span> ?</section>
+    <section class="subtitle">5 points simples à vérifier.</section>
+    <section class="phone">
+      <div class="search"></div>
+      <div class="result"><div class="line-a"></div><div class="line-b"></div><div class="stars">★★★★★</div></div>
+      <div class="result"><div class="line-a"></div><div class="line-b"></div><div class="stars">★★★★★</div></div>
+    </section>
+    <section class="cards">
+      <div class="card"><div class="icon">G</div><div class="card-title">Google clair</div></div>
+      <div class="card"><div class="icon">✓</div><div class="card-title">Site à jour</div></div>
+      <div class="card"><div class="icon">@</div><div class="card-title">Contact facile</div></div>
+      <div class="card"><div class="icon">f</div><div class="card-title">Page active</div></div>
+      <div class="card wide"><div class="icon">+</div><div class="card-title">Message lisible en quelques secondes</div></div>
+    </section>
+    <div class="email">gestion.localia@gmail.com</div>
+    <footer class="footer">
+      <div class="footer-left">Visibilité locale · Site web · Réseaux sociaux · IA</div>
+      <div class="cta">localiapro.fr</div>
+    </footer>
+  </main>
+</body>
+</html>
