@@ -1,0 +1,31 @@
+{
+  "version": "1.0",
+  "layouts": {
+    "L01_dark_infographic": {
+      "description": "Fond vert sombre, titre XXL a gauche, illustration premium a droite, bandeau services en bas.",
+      "best_for": ["SEO local", "site internet", "IA", "visibilite Google"],
+      "required_zones": ["logo_top_left", "headline_left", "hero_visual_right", "benefit_cards", "footer_cta"]
+    },
+    "L02_white_premium_card": {
+      "description": "Fond clair, blocs verts, titre fort, bouton orange, style plus explicatif.",
+      "best_for": ["offre", "prix", "formation", "comparaison"],
+      "required_zones": ["logo_top_left", "headline_top", "central_cards", "cta_button"]
+    },
+    "L03_photo_context": {
+      "description": "Photo realiste de commerce ou situation metier avec surcouche Localia verte et orange.",
+      "best_for": ["commerce local", "restaurant", "evenement", "situation terrain"],
+      "required_zones": ["photo_background", "dark_overlay", "headline", "cta"]
+    },
+    "L04_checklist_blocks": {
+      "description": "Titre fort puis plusieurs blocs arrondis avec icones ou coches.",
+      "best_for": ["conseils", "audit", "reseaux sociaux", "applications metier"],
+      "required_zones": ["headline", "three_to_five_cards", "footer_cta"]
+    }
+  },
+  "rules": [
+    "Choisir un layout existant au lieu d inventer une composition.",
+    "Conserver des marges larges et une lecture mobile.",
+    "Toujours prevoir un CTA ou une signature Localia.",
+    "Ne pas mettre trop de blocs : maximum 5 blocs explicatifs sur un visuel."
+  ]
+}
