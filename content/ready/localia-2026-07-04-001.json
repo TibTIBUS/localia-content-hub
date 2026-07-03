@@ -1,0 +1,24 @@
+{
+  "id": "localia-2026-07-04-001",
+  "status": "ready",
+  "company": "Localia",
+  "platforms": ["facebook", "instagram"],
+  "scheduled_for": "2026-07-04T09:00:00+02:00",
+  "topic": "Visibilite Google locale",
+  "objective": "Faire comprendre aux entreprises locales que leurs clients les cherchent deja en ligne.",
+  "facebook": {
+    "text": "Vos clients ne cherchent plus seulement une adresse ou un numero.\n\nIls ouvrent Google, regardent les resultats, comparent rapidement et contactent l entreprise qui inspire confiance.\n\nSi votre activite n apparait pas clairement en ligne, une partie des demandes part chez vos concurrents.\n\nChez Localia, nous aidons les commercants, artisans et entreprises locales a ameliorer leur visibilite : site internet, presence Google, SEO local, reseaux sociaux et outils IA simples.\n\nObjectif : etre trouve au bon moment, par les bonnes personnes.",
+    "cta": "Demander un diagnostic de visibilite locale."
+  },
+  "instagram": {
+    "caption": "Vos clients vous cherchent deja en ligne.\n\nLa vraie question : est-ce qu ils vous trouvent facilement ?\n\nLocalia aide les entreprises locales a gagner en visibilite sur Google, les reseaux sociaux et le web.\n\nObjectif : plus de contacts, plus de demandes, plus de clarte.",
+    "hashtags": ["#Localia", "#SEOLocal", "#VisibiliteLocale", "#Artisans", "#Commercants", "#PME", "#GoogleBusiness", "#CommunicationDigitale"]
+  },
+  "visual": {
+    "file": "/assets/images/localia-2026-07-04-001.png",
+    "brief": "/assets/visual-briefs/localia-2026-07-04-001.md",
+    "alt": "Visuel Localia sur la visibilite Google locale pour les commercants et artisans.",
+    "format": "1080x1080 PNG recommande"
+  },
+  "notes": "Le visuel final doit rester coherent avec les visuels Facebook Localia existants. L acces automatique a la galerie Facebook peut etre bloque ; dans ce cas, utiliser le brief visuel et les regles de marque sans changer la direction graphique."
+}
